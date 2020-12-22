@@ -7,6 +7,8 @@
  */
 
 import React from 'react';
+import SplashScreen from 'react-native-splash-screen'
+
 import {
   SafeAreaView,
   StyleSheet,
@@ -25,6 +27,8 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 const App: () => React$Node = () => {
+
+
   return (
     <>
       <StatusBar barStyle="dark-content" />
