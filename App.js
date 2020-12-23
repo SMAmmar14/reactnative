@@ -54,10 +54,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: 10,
     color: '#F5FCFF',
+     fontFamily: "Montserrat-Bold",
   },
   instructions: {
     textAlign: 'center',
     color: '#F5FCFF',
     marginBottom: 5,
+      fontFamily: "Montserrat-Regular",
   },
 });
