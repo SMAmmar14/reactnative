@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import SplashScreen from 'react-native-splash-screen';
 import { NavigationContainer } from '@react-navigation/native';
-import { NavigationContainer } from '@react-navigation/stack';
+import { createStackNavigator } from '@react-navigation/stack';
 
 
 
 //import Screens
-import OnboardingScreen from './screens/onboardingScreen';
+import onboardingScreen from './screens/onboardingScreen';
 
 import {
   Platform,
@@ -29,7 +29,7 @@ export default class App extends Component {
         <AppStack.Navigator
           headermode="none">
 
-          <AppStack.Screen name="onboardingScreen" Component={OnboardingScreen} />
+          <AppStack.Screen name="onboardingScreen" Component={onboardingScreen} />
 
 
 
