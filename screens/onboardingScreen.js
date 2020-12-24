@@ -9,9 +9,9 @@ import Onboarding from 'react-native-onboarding-swiper';
   pages={[
     {
       backgroundColor: '#fff',
-      image: <Image source={require('./images/circle.png')} />,
-      title: 'Onboarding',
-      subtitle: 'Done with React Native Onboarding Swiper',
+      image: <Image source={require('../assets/img/slider 1.png')} />,
+      title: 'Enabling Collaboration',
+      subtitle: 'We connect local shoppers to online buyers',
     },
     ...
   ]}
