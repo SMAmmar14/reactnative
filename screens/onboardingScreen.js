@@ -9,10 +9,21 @@ import Onboarding from 'react-native-onboarding-swiper';
   pages={[
     {
       backgroundColor: '#fff',
-      image: <Image source={require('../assets/img/slider 1.png')} />,
+      image: <Image source={require('../assets/img/slider1.png')} />,
       title: 'Enabling Collaboration',
       subtitle: 'We connect local shoppers to online buyers',
     },
-    ...
+      {
+      backgroundColor: '#fff',
+      image: <Image source={require('../assets/img/slider2.png')} />,
+      title: 'Enabling Collaboration',
+      subtitle: 'We connect local shoppers to online buyers',
+    },
+      {
+      backgroundColor: '#fff',
+      image: <Image source={require('../assets/img/slider3.png')} />,
+      title: 'Enabling Collaboration',
+      subtitle: 'We connect local shoppers to online buyers',
+    },
   ]}
 />
