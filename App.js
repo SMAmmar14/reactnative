@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SplashScreen from 'react-native-splash-screen';
-import { NavigationContainer} from '@react-navigation/native';
-import { NavigationContainer} from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/stack';
 
 
 
@@ -20,21 +20,21 @@ const AppStack = createStackNavigator();
 
 export default class App extends Component {
 
-    componentDidMount() {
+  componentDidMount() {
     SplashScreen.hide()
   }
   render() {
     return (
-   <NavigationContainer>
-     <AppStack.Navigator
-     headermode="none">
+      <NavigationContainer>
+        <AppStack.Navigator
+          headermode="none">
 
-       <AppStack.Screen name="onboardingScreen" Component={OnboardingScreen}/>
+          <AppStack.Screen name="onboardingScreen" Component={OnboardingScreen} />
 
-       
-       
-     </AppStack.Navigator>
-   </NavigationContainer>
+
+
+        </AppStack.Navigator>
+      </NavigationContainer>
     );
   }
 }
