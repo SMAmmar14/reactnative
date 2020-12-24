@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import SplashScreen from 'react-native-splash-screen';
 
+//import Screens
+import OnboardingScreen from './screens/onboardingScreen';
+
 import {
   Platform,
   StyleSheet,
