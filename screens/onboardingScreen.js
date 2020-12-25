@@ -49,37 +49,42 @@ const Done = ({...props}) => (
 );
 
 
-
-<Onboarding
-   SkipButtonComponent={Skip}
+const onboardingScreen = ({navigation}) => {
+    return (
+        <Onboarding
+        SkipButtonComponent={Skip}
         NextButtonComponent={Next}
         DoneButtonComponent={Done}
         DotComponent={Dots}
         onSkip={() => navigation.replace("Login")}
         onDone={() => navigation.navigate("Login")}
-  pages={[
-    {
-      backgroundColor: '#fff',
-      image: <Image source={require('../assets/img/slider1.png')} />,
-      title: 'Enabling Collaboration',
-      subtitle: 'We connect local shoppers to online buyers',
-    },
-      {
-      backgroundColor: '#fff',
-      image: <Image source={require('../assets/img/slider2.png')} />,
-      title: 'Peer Up',
-      subtitle: 'Going home? Ready to help? Drop Orders Get Compensated',
-    },
-      {
-      backgroundColor: '#fff',
-      image: <Image source={require('../assets/img/slider3.png')} />,
-      title: 'Enabling Collaboration',
-      subtitle: 'Busy at home? Need groceries quickly? Want low service fees 0% Mark-up as well? Just make a list',
-    },
-  ]}
-/>
+        pages={[
+          {
+            backgroundColor: '#a6e4d0',
+            image: <Image source={require('../assets/img/slider1.png')} />,
+            title: 'Connect to the World',
+            subtitle: 'A New Way To Connect With The World',
+          },
+          {
+            backgroundColor: '#fdeb93',
+            image: <Image source={require('../assets/img/slider2.png')} />,
+            title: 'Share Your Favorites',
+            subtitle: 'Share Your Thoughts With Similar Kind of People',
+          },
+          {
+            backgroundColor: '#e9bcbe',
+            image: <Image source={require('../assets/img/slider3.png')} />,
+            title: 'Become The Star',
+            subtitle: "Let The Spot Light Capture You",
+          },
+        ]}
+      />
+    );
+};
+
 
 export default onboardingScreen;
+
 
 const styles = StyleSheet.create({
   container: {

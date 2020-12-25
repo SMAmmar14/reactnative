@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 //import Screens
-import onboardingScreen from './screens/onboardingScreen';
+import onboardingScreen  from './screens/onboardingScreen';
 
 import {
   Platform,
@@ -27,7 +27,7 @@ export default class App extends Component {
         <AppStack.Navigator
           headermode="none">
 
-          <AppStack.Screen name="onboardingScreen" Component={onboardingScreen} />
+          <AppStack.Screen name="Onboarding" Component={ onboardingScreen } />
 
 
 
