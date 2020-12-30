@@ -24,10 +24,9 @@ export default class App extends Component {
   render() {
     return (
       <NavigationContainer>
-        <AppStack.Navigator
-          headermode="none">
+        <AppStack.Navigator>
 
-          <AppStack.Screen name="Onboarding" Component={ onboardingScreen } />
+          <AppStack.Screen name="onboardingScreen" component={ onboardingScreen } />
 
 
 

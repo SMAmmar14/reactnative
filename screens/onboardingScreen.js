@@ -1,5 +1,5 @@
 import React from 'react';
-import { view, Button, Text, Image, StyleSheet} from 'react-native';
+import { View, Button, Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
 
 import Onboarding from 'react-native-onboarding-swiper';
 
@@ -12,10 +12,6 @@ const Dots = ({selected}) => {
     return (
         <View 
             style={{
-                width:6,
-                height: 6,
-                marginHorizontal: 3,
-                backgroundColor
             }}
         />
     );
